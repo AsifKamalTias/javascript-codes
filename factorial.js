@@ -1,11 +1,18 @@
 function factorial(number){
 
-    let fact = 1;
-    for(let i = 1; i<=number; i++)
+    if(number>=0)
     {
-        fact = fact*i;
+        let fact = 1;
+        for(let i = 1; i<=number; i++)
+        {
+            fact = fact*i;
+        }
+        return fact;
     }
-    return fact;
+    else
+    {
+        return undefined;
+    }
 }
 
-console.log(factorial(4));
+console.log(factorial(5));
